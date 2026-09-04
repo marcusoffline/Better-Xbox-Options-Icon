@@ -2,9 +2,11 @@
 
 Replaces the default Options icon for Xbox Controllers in SteamOS, with a cleaner, better glyph.
 
+![Preview]([PREVIEW_IMAGE_URL](https://github.com/marcusoffline/Better-Xbox-Options-Icon/blob/main/Preview.png))
+
 Author: Muucuusss
 
-## Install
+## Installation
 
 Replace the existing `Better Xbox Options Icon` folder in:
 
