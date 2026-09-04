@@ -1,0 +1,72 @@
+/*
+ * Better Xbox Options Icon
+ * v1.0.1-test
+ * Author: Muucuusss
+ *
+ * Pure CSS version — no SVG, PNG, data URI, or bundled glyph asset.
+ *
+ * This revision restores the visual footprint used by the previous working
+ * version. The previous v1.0.0 used 55 CSS px, which SteamOS scaled far larger
+ * than the native A/B footer glyphs. The icon is now 22 CSS px, matching the
+ * old on-screen size while retaining the exact supplied 18 x 18 geometry.
+ */
+
+:root {
+    --better-xbox-options-size: 22px;
+}
+
+#Footer img[src="/steaminputglyphs/xbox360_button_start.svg" i],
+#Footer img[src$="/xbox360_button_start.svg" i],
+#Footer img[src*="xbox" i][src*="menu" i],
+#Footer img[src*="xbox" i][src*="start" i],
+#Footer img[src*="xbox" i][src*="options" i],
+.footer_BasicFooter_3T1iF img[src="/steaminputglyphs/xbox360_button_start.svg" i],
+.footer_BasicFooter_3T1iF img[src$="/xbox360_button_start.svg" i],
+.footer_BasicFooter_3T1iF img[src*="xbox" i][src*="menu" i],
+.footer_BasicFooter_3T1iF img[src*="xbox" i][src*="start" i],
+.footer_BasicFooter_3T1iF img[src*="xbox" i][src*="options" i],
+#Footer [data-gamepad-button="OPTIONS" i] img,
+#Footer [data-gamepad-button="START" i] img,
+#Footer [data-gamepadbutton="OPTIONS" i] img,
+#Footer [data-gamepadbutton="START" i] img,
+#Footer [data-button="OPTIONS" i] img,
+#Footer [data-button="START" i] img,
+#Footer [aria-label*="Options" i] img,
+#Footer [title*="Options" i] img,
+.footer_BasicFooter_3T1iF [data-gamepad-button="OPTIONS" i] img,
+.footer_BasicFooter_3T1iF [data-gamepad-button="START" i] img,
+.footer_BasicFooter_3T1iF [data-gamepadbutton="OPTIONS" i] img,
+.footer_BasicFooter_3T1iF [data-gamepadbutton="START" i] img,
+.footer_BasicFooter_3T1iF [data-button="OPTIONS" i] img,
+.footer_BasicFooter_3T1iF [data-button="START" i] img,
+.footer_BasicFooter_3T1iF [aria-label*="Options" i] img,
+.footer_BasicFooter_3T1iF [title*="Options" i] img,
+#Footer [style*="xbox" i][style*="menu" i],
+#Footer [style*="xbox" i][style*="start" i],
+#Footer [style*="xbox" i][style*="options" i],
+.footer_BasicFooter_3T1iF [style*="xbox" i][style*="menu" i],
+.footer_BasicFooter_3T1iF [style*="xbox" i][style*="start" i],
+.footer_BasicFooter_3T1iF [style*="xbox" i][style*="options" i] {
+    content: "" !important;
+    background-image: none !important;
+    object-fit: none !important;
+    object-position: 10000px 10000px !important;
+    overflow: hidden !important;
+    background-color: #fff !important;
+
+    width: var(--better-xbox-options-size) !important;
+    min-width: var(--better-xbox-options-size) !important;
+    max-width: var(--better-xbox-options-size) !important;
+    height: var(--better-xbox-options-size) !important;
+    min-height: var(--better-xbox-options-size) !important;
+    max-height: var(--better-xbox-options-size) !important;
+    flex: 0 0 var(--better-xbox-options-size) !important;
+    aspect-ratio: 1 / 1 !important;
+    box-sizing: border-box !important;
+    vertical-align: middle !important;
+    transform: none !important;
+
+    /* Exact supplied 18×18 geometry, proportionally scaled to 22 CSS px. */
+    -webkit-clip-path: path(evenodd, "M11 0 A11 11 0 1 1 11 22 A11 11 0 1 1 11 0 Z M4.8125 7.1041667 H17.1875 A0.2291667 0.2291667 0 0 1 17.4166667 7.3333333 V8.25 A0.2291667 0.2291667 0 0 1 17.1875 8.4791667 H4.8125 A0.2291667 0.2291667 0 0 1 4.5833333 8.25 V7.3333333 A0.2291667 0.2291667 0 0 1 4.8125 7.1041667 Z M4.8125 10.3125 H17.1875 A0.2291667 0.2291667 0 0 1 17.4166667 10.5416667 V11.4583333 A0.2291667 0.2291667 0 0 1 17.1875 11.6875 H4.8125 A0.2291667 0.2291667 0 0 1 4.5833333 11.4583333 V10.5416667 A0.2291667 0.2291667 0 0 1 4.8125 10.3125 Z M4.8125 13.5208333 H17.1875 A0.2291667 0.2291667 0 0 1 17.4166667 13.75 V14.6666667 A0.2291667 0.2291667 0 0 1 17.1875 14.8958333 H4.8125 A0.2291667 0.2291667 0 0 1 4.5833333 14.6666667 V13.75 A0.2291667 0.2291667 0 0 1 4.8125 13.5208333 Z") !important;
+    clip-path: path(evenodd, "M11 0 A11 11 0 1 1 11 22 A11 11 0 1 1 11 0 Z M4.8125 7.1041667 H17.1875 A0.2291667 0.2291667 0 0 1 17.4166667 7.3333333 V8.25 A0.2291667 0.2291667 0 0 1 17.1875 8.4791667 H4.8125 A0.2291667 0.2291667 0 0 1 4.5833333 8.25 V7.3333333 A0.2291667 0.2291667 0 0 1 4.8125 7.1041667 Z M4.8125 10.3125 H17.1875 A0.2291667 0.2291667 0 0 1 17.4166667 10.5416667 V11.4583333 A0.2291667 0.2291667 0 0 1 17.1875 11.6875 H4.8125 A0.2291667 0.2291667 0 0 1 4.5833333 11.4583333 V10.5416667 A0.2291667 0.2291667 0 0 1 4.8125 10.3125 Z M4.8125 13.5208333 H17.1875 A0.2291667 0.2291667 0 0 1 17.4166667 13.75 V14.6666667 A0.2291667 0.2291667 0 0 1 17.1875 14.8958333 H4.8125 A0.2291667 0.2291667 0 0 1 4.5833333 14.6666667 V13.75 A0.2291667 0.2291667 0 0 1 4.8125 13.5208333 Z") !important;
+}

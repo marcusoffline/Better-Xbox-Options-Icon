@@ -1,0 +1,15 @@
+{
+  "name": "Better Xbox Options Icon",
+  "author": "Muucuusss",
+  "version": "v1.0.0",
+  "target": "System-Wide",
+  "description": "Replaces the default Options icon for Xbox Controllers in SteamOS, with a cleaner, better glyph.",
+  "manifest_version": 8,
+  "inject": {
+    "shared.css": [
+      "bigpicture",
+      "QuickAccess",
+      "MainMenu"
+    ]
+  }
+}
